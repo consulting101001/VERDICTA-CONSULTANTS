@@ -424,6 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const yearDisplay = document.getElementById('year-display');
     if (yearDisplay) yearDisplay.textContent = new Date().getFullYear().toString();
     (window as any).navigateTo('landing');
+    render();
     
     window.addEventListener('scroll', () => {
         const nav = document.getElementById('main-nav');
